@@ -1,9 +1,6 @@
 import React, { SVGProps } from "react";
 
-export default function ThreeDotBounce({
-  width = 24,
-  height = 24,
-}: SVGProps<SVGElement>): JSX.Element {
+export default function BlocksWave({ width = 24, height = 24 }: SVGProps<SVGElement>): JSX.Element {
   return (
     <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <rect x="1" y="1" width="7.33" height="7.33">

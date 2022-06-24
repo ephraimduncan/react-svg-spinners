@@ -1,6 +1,6 @@
 import React, { SVGProps } from "react";
 
-export default function ThreeDotBounce({
+export default function GooeyBallsOne({
   width = 24,
   height = 24,
 }: SVGProps<SVGElement>): JSX.Element {
