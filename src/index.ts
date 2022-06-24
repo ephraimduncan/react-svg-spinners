@@ -4,3 +4,4 @@ export * from "./components/ThreeDotsMoving";
 export * from "./components/ThreeDotsRotate";
 export * from "./components/ThreeDotsScaleMiddle";
 export * from "./components/ThreeDotsScale";
+export * from "./components/SixDotsRotate";
