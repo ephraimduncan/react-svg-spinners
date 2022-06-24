@@ -1,0 +1,14 @@
+{
+  "name": "react-svg-spinner",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "repository": "https://github.com/dephraiim/react-svg-spinner",
+  "author": "Ephraim Atta-Duncan",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
