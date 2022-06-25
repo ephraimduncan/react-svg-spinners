@@ -11,7 +11,7 @@ npm install react-svg-spinners
 ## Usage
 
 ```js
-import Pulse from "react-svg-spinners";
+import { Pulse } from "react-svg-spinners";
 
 export default function App() {
   return <Pulse />;

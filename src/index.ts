@@ -1,44 +1,91 @@
-export * from "./components/BarsFade";
-export * from "./components/BarsRotateFade";
-export * from "./components/BarsScale";
-export * from "./components/BarsScaleFade";
-export * from "./components/BarsScaleMiddle";
-export * from "./components/BlocksScale";
-export * from "./components/BlocksShuffleThree";
-export * from "./components/BlocksShuffleTwo";
-export * from "./components/BlocksWave";
-export * from "./components/BouncingBall";
-export * from "./components/Clock";
-export * from "./components/DotRevolve";
-export * from "./components/Eclipse";
-export * from "./components/EclipseHalf";
-export * from "./components/GooeyBallsOne";
-export * from "./components/GooeyBallsTwo";
-export * from "./components/NinetyRing";
-export * from "./components/NinetyRingWithBg";
-export * from "./components/OneEightyRing";
-export * from "./components/OneEightyRingWithBg";
-export * from "./components/Pulse";
-export * from "./components/PulseMultiple";
-export * from "./components/PulseRing";
-export * from "./components/PulseRingsMultiple";
-export * from "./components/PulseRingsThree";
-export * from "./components/PulseRingsTwo";
-export * from "./components/PulseThree";
-export * from "./components/PulseTwo";
-export * from "./components/SixDotsRotate";
-export * from "./components/SixDotsScale";
-export * from "./components/SixDotsScaleMiddle";
-export * from "./components/Tadpole";
-export * from "./components/ThreeDotsBounce";
-export * from "./components/ThreeDotsFade";
-export * from "./components/ThreeDotsMoving";
-export * from "./components/ThreeDotsRotate";
-export * from "./components/ThreeDotsScale";
-export * from "./components/ThreeDotsScaleMiddle";
-export * from "./components/TwelveDotsScaleRotate";
-export * from "./components/TwoSeventyRing";
-export * from "./components/TwoSeventyRingWithBg";
-export * from "./components/Wifi";
-export * from "./components/WifiFade";
-export * from "./components/WindToy";
+import BarsFade from "./components/BarsFade";
+import BarsRotateFade from "./components/BarsRotateFade";
+import BarsScale from "./components/BarsScale";
+import BarsScaleFade from "./components/BarsScaleFade";
+import BarsScaleMiddle from "./components/BarsScaleMiddle";
+import BlocksScale from "./components/BlocksScale";
+import BlocksShuffleThree from "./components/BlocksShuffleThree";
+import BlocksShuffleTwo from "./components/BlocksShuffleTwo";
+import BlocksWave from "./components/BlocksWave";
+import BouncingBall from "./components/BouncingBall";
+import Clock from "./components/Clock";
+import DotRevolve from "./components/DotRevolve";
+import Eclipse from "./components/Eclipse";
+import EclipseHalf from "./components/EclipseHalf";
+import GoeeyBallsOne from "./components/GooeyBallsOne";
+import GoeeyBallsTwo from "./components/GooeyBallsTwo";
+import NinetyRing from "./components/NinetyRing";
+import NinetyRingWithBg from "./components/NinetyRingWithBg";
+import OneEightyRing from "./components/OneEightyRing";
+import OneEightyRingWithBg from "./components/OneEightyRingWithBg";
+import Pulse from "./components/Pulse";
+import PulseMultiple from "./components/PulseMultiple";
+import PulseRing from "./components/PulseRing";
+import Multiple from "./components/PulseRingsMultiple";
+import PulseRingsThree from "./components/PulseRingsThree";
+import PulseRingsTwo from "./components/PulseRingsTwo";
+import PulseThree from "./components/PulseThree";
+import PulseTwo from "./components/PulseTwo";
+import SixDotsRotate from "./components/SixDotsRotate";
+import SixDotsScale from "./components/SixDotsScale";
+import SixDotsScaleMiddle from "./components/SixDotsScaleMiddle";
+import Tadpole from "./components/Tadpole";
+import ThreeDotsBounce from "./components/ThreeDotsBounce";
+import ThreeDotsFade from "./components/ThreeDotsFade";
+import ThreeDotsMoving from "./components/ThreeDotsMoving";
+import ThreeDotsRotate from "./components/ThreeDotsRotate";
+import ThreeDotsScale from "./components/ThreeDotsScale";
+import ThreeDotsMiddle from "./components/ThreeDotsScaleMiddle";
+import TwelveDotsScaleRotate from "./components/TwelveDotsScaleRotate";
+import TwoSeventyRing from "./components/TwoSeventyRing";
+import TwoSeventyRingWithBg from "./components/TwoSeventyRingWithBg";
+import Wifi from "./components/Wifi";
+import WifiFade from "./components/WifiFade";
+import WindToy from "./components/WindToy";
+
+export {
+  BarsFade,
+  BarsRotateFade,
+  BarsScale,
+  BarsScaleFade,
+  BarsScaleMiddle,
+  BlocksScale,
+  BlocksShuffleThree,
+  BlocksShuffleTwo,
+  BlocksWave,
+  BouncingBall,
+  Clock,
+  DotRevolve,
+  Eclipse,
+  EclipseHalf,
+  GoeeyBallsOne,
+  GoeeyBallsTwo,
+  Multiple,
+  NinetyRing,
+  NinetyRingWithBg,
+  OneEightyRing,
+  OneEightyRingWithBg,
+  Pulse,
+  PulseMultiple,
+  PulseRing,
+  PulseRingsThree,
+  PulseRingsTwo,
+  PulseThree,
+  PulseTwo,
+  SixDotsRotate,
+  SixDotsScale,
+  SixDotsScaleMiddle,
+  Tadpole,
+  ThreeDotsBounce,
+  ThreeDotsFade,
+  ThreeDotsMiddle,
+  ThreeDotsMoving,
+  ThreeDotsRotate,
+  ThreeDotsScale,
+  TwelveDotsScaleRotate,
+  TwoSeventyRing,
+  TwoSeventyRingWithBg,
+  Wifi,
+  WifiFade,
+  WindToy,
+};

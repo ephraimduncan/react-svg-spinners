@@ -1,10 +1,11 @@
 {
   "name": "react-svg-spinners",
-  "version": "0.1.2-test",
+  "version": "0.1.3",
   "repository": "https://github.com/dephraiim/react-svg-spinner",
   "author": "Ephraim Atta-Duncan",
   "license": "MIT",
   "main": "dist/index.js",
+  "types": "dist/index.js",
   "devDependencies": {
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
@@ -18,7 +19,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "tsup src/* --dts "
+    "build": "tsup"
   },
   "keywords": [
     "react",
