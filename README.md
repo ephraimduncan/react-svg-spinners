@@ -28,6 +28,7 @@ export default function App() {
 | -------- | -------- | ----------------------------------- |
 | width    | _number_ | Specifies the width of the spinner  |
 | height   | _number_ | Specifies the height of the spinner |
+| color    | _string_ | Color of the spinner                |
 
 ## Preview
 
