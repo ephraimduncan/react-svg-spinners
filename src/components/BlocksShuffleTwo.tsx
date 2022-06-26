@@ -3,9 +3,16 @@ import React, { SVGProps } from "react";
 export default function BlocksShuffleTwo({
   width = 24,
   height = 24,
+  color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
-    <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      fill={color}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect x="1" y="1" rx="1" width="10" height="10">
         <animate id="a" begin="0;k.end" attributeName="x" dur="0.2s" values="1;13" fill="freeze" />
         <animate id="d" begin="b.end" attributeName="y" dur="0.2s" values="1;13" fill="freeze" />

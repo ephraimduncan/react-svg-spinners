@@ -3,9 +3,16 @@ import React, { SVGProps } from "react";
 export default function BouncingBall({
   width = 24,
   height = 24,
+  color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
-    <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      fill={color}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <ellipse cx="12" cy="5" rx="4" ry="4">
         <animate
           id="f"

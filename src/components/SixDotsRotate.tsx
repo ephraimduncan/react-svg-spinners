@@ -3,9 +3,16 @@ import React, { SVGProps } from "react";
 export default function SixDotsRotate({
   width = 24,
   height = 24,
+  color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
-    <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      fill={color}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g>
         <circle cx="12" cy="2.5" r="1.5" opacity=".14" />
         <circle cx="16.75" cy="3.77" r="1.5" opacity=".29" />

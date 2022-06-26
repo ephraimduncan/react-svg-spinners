@@ -1,8 +1,18 @@
 import React, { SVGProps } from "react";
 
-export default function Wifi({ width = 24, height = 24 }: SVGProps<SVGElement>): JSX.Element {
+export default function Wifi({
+  width = 24,
+  height = 24,
+  color,
+}: SVGProps<SVGElement>): JSX.Element {
   return (
-    <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      fill={color}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M12,21L15.6,16.2C14.6,15.45 13.35,15 12,15C10.65,15 9.4,15.45 8.4,16.2L12,21"
         opacity="0"

@@ -3,9 +3,16 @@ import React, { SVGProps } from "react";
 export default function GooeyBallsOne({
   width = 24,
   height = 24,
+  color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
-    <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      fill={color}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <defs>
         <filter id="g">
           <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="b" />

@@ -1,8 +1,18 @@
 import React, { SVGProps } from "react";
 
-export default function BlocksWave({ width = 24, height = 24 }: SVGProps<SVGElement>): JSX.Element {
+export default function BlocksWave({
+  width = 24,
+  height = 24,
+  color,
+}: SVGProps<SVGElement>): JSX.Element {
   return (
-    <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      fill={color}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect x="1" y="1" width="7.33" height="7.33">
         <animate id="a" begin="0;b.end+0.2s" attributeName="x" dur="0.6s" values="1;4;1" />
         <animate begin="0;b.end+0.2s" attributeName="y" dur="0.6s" values="1;4;1" />

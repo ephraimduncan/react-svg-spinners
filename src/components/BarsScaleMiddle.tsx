@@ -3,9 +3,16 @@ import React, { SVGProps } from "react";
 export default function BarsScaleMiddle({
   width = 24,
   height = 24,
+  color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
-    <svg width={width} height={height} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      fill={color}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <rect x="1" y="6" width="2.8" height="12">
         <animate
           begin="a.begin+0.4s"
