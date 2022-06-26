@@ -1,8 +1,10 @@
 import React, { SVGProps } from "react";
+import { stringDurationToFloat } from "../util";
 
 export default function WifiFade({
   width = 24,
   height = 24,
+  dur = "0.25s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -21,7 +23,7 @@ export default function WifiFade({
           id="a"
           begin="0;d.end+0.2s"
           attributeName="opacity"
-          dur="0.25s"
+          dur={dur}
           values="0;1"
           fill="freeze"
         />
@@ -29,7 +31,7 @@ export default function WifiFade({
           id="d"
           begin="c.end+0.5s"
           attributeName="opacity"
-          dur="0.1s"
+          dur={stringDurationToFloat(dur) / 2.5}
           values="1;0"
           fill="freeze"
         />
@@ -42,7 +44,7 @@ export default function WifiFade({
           id="b"
           begin="a.end"
           attributeName="opacity"
-          dur="0.25s"
+          dur={dur}
           values="0;1"
           fill="freeze"
         />
@@ -56,7 +58,7 @@ export default function WifiFade({
           id="c"
           begin="b.end"
           attributeName="opacity"
-          dur="0.25s"
+          dur={dur}
           values="0;1"
           fill="freeze"
         />

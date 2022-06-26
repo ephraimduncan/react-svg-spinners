@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function Pulse({
   width = 24,
   height = 24,
+  dur = "1.2s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -17,7 +18,7 @@ export default function Pulse({
         <animate
           attributeName="r"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="0;11"
           keySplines=".52,.6,.25,.99"
           repeatCount="indefinite"
@@ -25,7 +26,7 @@ export default function Pulse({
         <animate
           attributeName="opacity"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="1;0"
           keySplines=".52,.6,.25,.99"
           repeatCount="indefinite"

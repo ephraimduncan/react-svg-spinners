@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function ThreeDotsScaleRotate({
   width = 24,
   height = 24,
+  dur = "0.6s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -20,7 +21,7 @@ export default function ThreeDotsScaleRotate({
             begin="0;l.end-0.5s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -31,7 +32,7 @@ export default function ThreeDotsScaleRotate({
             begin="a.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -42,7 +43,7 @@ export default function ThreeDotsScaleRotate({
             begin="k.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -53,7 +54,7 @@ export default function ThreeDotsScaleRotate({
             begin="b.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -64,7 +65,7 @@ export default function ThreeDotsScaleRotate({
             begin="j.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -75,7 +76,7 @@ export default function ThreeDotsScaleRotate({
             begin="c.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -86,7 +87,7 @@ export default function ThreeDotsScaleRotate({
             begin="i.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -97,7 +98,7 @@ export default function ThreeDotsScaleRotate({
             begin="d.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -108,7 +109,7 @@ export default function ThreeDotsScaleRotate({
             begin="h.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -119,7 +120,7 @@ export default function ThreeDotsScaleRotate({
             begin="e.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -130,7 +131,7 @@ export default function ThreeDotsScaleRotate({
             begin="g.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />
@@ -141,7 +142,7 @@ export default function ThreeDotsScaleRotate({
             begin="f.begin+0.1s"
             attributeName="r"
             calcMode="spline"
-            dur="0.6s"
+            dur={dur}
             values="1;2;1"
             keySplines=".27,.42,.37,.99;.53,0,.61,.73"
           />

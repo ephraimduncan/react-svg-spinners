@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function ThreeDotsRotate({
   width = 24,
   height = 24,
+  dur = "1s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -21,7 +22,7 @@ export default function ThreeDotsRotate({
           attributeName="transform"
           type="rotate"
           calcMode="spline"
-          dur="1s"
+          dur={dur}
           keySplines=".36,.6,.31,1;.36,.6,.31,1"
           values="0 12 12;180 12 12;360 12 12"
           repeatCount="indefinite"

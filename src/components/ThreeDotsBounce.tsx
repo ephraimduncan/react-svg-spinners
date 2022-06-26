@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function ThreeDotsBounce({
   width = 24,
   height = 24,
+  dur = "0.6s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -19,7 +20,7 @@ export default function ThreeDotsBounce({
           begin="0;b.end+0.25s"
           attributeName="cy"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;6;12"
           keySplines=".33,.66,.66,1;.33,0,.66,.33"
         />
@@ -29,7 +30,7 @@ export default function ThreeDotsBounce({
           begin="a.begin+0.1s"
           attributeName="cy"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;6;12"
           keySplines=".33,.66,.66,1;.33,0,.66,.33"
         />
@@ -40,7 +41,7 @@ export default function ThreeDotsBounce({
           begin="a.begin+0.2s"
           attributeName="cy"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;6;12"
           keySplines=".33,.66,.66,1;.33,0,.66,.33"
         />

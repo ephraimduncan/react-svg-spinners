@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function PulseRingsTwo({
   width = 24,
   height = 24,
+  dur = "1.2s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -23,7 +24,7 @@ export default function PulseRingsTwo({
           attributeName="transform"
           calcMode="spline"
           type="translate"
-          dur="1.2s"
+          dur={dur}
           values="12 12;0 0"
           keySplines=".52,.6,.25,.99"
         />
@@ -33,7 +34,7 @@ export default function PulseRingsTwo({
           calcMode="spline"
           additive="sum"
           type="scale"
-          dur="1.2s"
+          dur={dur}
           values="0;1"
           keySplines=".52,.6,.25,.99"
         />
@@ -41,7 +42,7 @@ export default function PulseRingsTwo({
           begin="0;b.begin+0.6s"
           attributeName="opacity"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="1;0"
           keySplines=".52,.6,.25,.99"
         />
@@ -56,7 +57,7 @@ export default function PulseRingsTwo({
           attributeName="transform"
           calcMode="spline"
           type="translate"
-          dur="1.2s"
+          dur={dur}
           values="12 12;0 0"
           keySplines=".52,.6,.25,.99"
         />
@@ -66,7 +67,7 @@ export default function PulseRingsTwo({
           calcMode="spline"
           additive="sum"
           type="scale"
-          dur="1.2s"
+          dur={dur}
           values="0;1"
           keySplines=".52,.6,.25,.99"
         />
@@ -74,7 +75,7 @@ export default function PulseRingsTwo({
           begin="a.begin+0.6s"
           attributeName="opacity"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="1;0"
           keySplines=".52,.6,.25,.99"
         />

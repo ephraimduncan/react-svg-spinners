@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function GooeyBallsOne({
   width = 24,
   height = 24,
+  dur = "0.75s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -30,7 +31,7 @@ export default function GooeyBallsOne({
           <animate
             attributeName="cx"
             calcMode="spline"
-            dur="0.75s"
+            dur={dur}
             values="4;9;4"
             keySplines=".56,.52,.17,.98;.56,.52,.17,.98"
             repeatCount="indefinite"
@@ -38,7 +39,7 @@ export default function GooeyBallsOne({
           <animate
             attributeName="r"
             calcMode="spline"
-            dur="0.75s"
+            dur={dur}
             values="3;8;3"
             keySplines=".56,.52,.17,.98;.56,.52,.17,.98"
             repeatCount="indefinite"
@@ -48,7 +49,7 @@ export default function GooeyBallsOne({
           <animate
             attributeName="cx"
             calcMode="spline"
-            dur="0.75s"
+            dur={dur}
             values="15;20;15"
             keySplines=".56,.52,.17,.98;.56,.52,.17,.98"
             repeatCount="indefinite"
@@ -56,7 +57,7 @@ export default function GooeyBallsOne({
           <animate
             attributeName="r"
             calcMode="spline"
-            dur="0.75s"
+            dur={dur}
             values="8;3;8"
             keySplines=".56,.52,.17,.98;.56,.52,.17,.98"
             repeatCount="indefinite"

@@ -1,8 +1,10 @@
 import React, { SVGProps } from "react";
+import { stringDurationToFloat } from "../util";
 
 export default function BouncingBall({
   width = 24,
   height = 24,
+  dur = "0.375s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -19,7 +21,7 @@ export default function BouncingBall({
           begin="0;r.end"
           attributeName="cy"
           calcMode="spline"
-          dur="0.375s"
+          dur={dur}
           values="5;20"
           keySplines=".33,0,.66,.33"
           fill="freeze"
@@ -29,7 +31,7 @@ export default function BouncingBall({
           begin="f.end"
           attributeName="rx"
           calcMode="spline"
-          dur="0.05s"
+          dur={stringDurationToFloat(dur) / 7.5}
           values="4;4.8;4"
           keySplines=".33,0,.66,.33;.33,.66,.66,1"
         />
@@ -37,7 +39,7 @@ export default function BouncingBall({
           begin="f.end"
           attributeName="ry"
           calcMode="spline"
-          dur="0.05s"
+          dur={stringDurationToFloat(dur) / 7.5}
           values="4;3;4"
           keySplines=".33,0,.66,.33;.33,.66,.66,1"
         />
@@ -45,7 +47,7 @@ export default function BouncingBall({
           begin="f.end"
           attributeName="cy"
           calcMode="spline"
-          dur="0.05s"
+          dur={stringDurationToFloat(dur) / 7.5}
           values="20;20.5;20"
           keySplines=".33,0,.66,.33;.33,.66,.66,1"
         />
@@ -54,7 +56,7 @@ export default function BouncingBall({
           begin="b.end"
           attributeName="cy"
           calcMode="spline"
-          dur="0.375s"
+          dur={dur}
           values="20;5"
           keySplines=".33,.66,.66,1"
         />

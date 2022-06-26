@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function SixDotsScale({
   width = 24,
   height = 24,
+  dur = "0.6s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -19,7 +20,7 @@ export default function SixDotsScale({
           begin="0;l.end-0.5s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -32,7 +33,7 @@ export default function SixDotsScale({
           begin="a.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -45,7 +46,7 @@ export default function SixDotsScale({
           begin="k.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -58,7 +59,7 @@ export default function SixDotsScale({
           begin="b.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -71,7 +72,7 @@ export default function SixDotsScale({
           begin="j.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -84,7 +85,7 @@ export default function SixDotsScale({
           begin="c.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -97,7 +98,7 @@ export default function SixDotsScale({
           begin="i.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -110,7 +111,7 @@ export default function SixDotsScale({
           begin="d.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -123,7 +124,7 @@ export default function SixDotsScale({
           begin="h.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -136,7 +137,7 @@ export default function SixDotsScale({
           begin="e.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -149,7 +150,7 @@ export default function SixDotsScale({
           begin="g.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"
@@ -162,7 +163,7 @@ export default function SixDotsScale({
           begin="f.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keyTimes="0;.2;1"
           keySplines="0,1,0,1;.53,0,.61,.73"

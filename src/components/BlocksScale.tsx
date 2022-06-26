@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function BlocksScale({
   width = 24,
   height = 24,
+  dur = "0.6s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -18,28 +19,28 @@ export default function BlocksScale({
           id="a"
           begin="0;b.end+0.15s"
           attributeName="x"
-          dur="0.6s"
+          dur={dur}
           values="1.5;.5;1.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="0;b.end+0.15s"
           attributeName="y"
-          dur="0.6s"
+          dur={dur}
           values="1.5;.5;1.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="0;b.end+0.15s"
           attributeName="width"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />
         <animate
           begin="0;b.end+0.15s"
           attributeName="height"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />
@@ -48,28 +49,28 @@ export default function BlocksScale({
         <animate
           begin="a.begin+0.15s"
           attributeName="x"
-          dur="0.6s"
+          dur={dur}
           values="13.5;12.5;13.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.15s"
           attributeName="y"
-          dur="0.6s"
+          dur={dur}
           values="1.5;.5;1.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.15s"
           attributeName="width"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.15s"
           attributeName="height"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />
@@ -78,28 +79,28 @@ export default function BlocksScale({
         <animate
           begin="a.begin+0.3s"
           attributeName="x"
-          dur="0.6s"
+          dur={dur}
           values="13.5;12.5;13.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.3s"
           attributeName="y"
-          dur="0.6s"
+          dur={dur}
           values="13.5;12.5;13.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.3s"
           attributeName="width"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.3s"
           attributeName="height"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />
@@ -109,28 +110,28 @@ export default function BlocksScale({
           id="b"
           begin="a.begin+0.45s"
           attributeName="x"
-          dur="0.6s"
+          dur={dur}
           values="1.5;.5;1.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.45s"
           attributeName="y"
-          dur="0.6s"
+          dur={dur}
           values="13.5;12.5;13.5"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.45s"
           attributeName="width"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />
         <animate
           begin="a.begin+0.45s"
           attributeName="height"
-          dur="0.6s"
+          dur={dur}
           values="9;11;9"
           keyTimes="0;.2;1"
         />

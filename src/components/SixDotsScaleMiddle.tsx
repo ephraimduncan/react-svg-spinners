@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function SixDotsScaleMiddle({
   width = 24,
   height = 24,
+  dur = "0.6s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -19,7 +20,7 @@ export default function SixDotsScaleMiddle({
           begin="0;l.end-0.5s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -30,7 +31,7 @@ export default function SixDotsScaleMiddle({
           begin="a.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -41,7 +42,7 @@ export default function SixDotsScaleMiddle({
           begin="k.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -52,7 +53,7 @@ export default function SixDotsScaleMiddle({
           begin="b.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -63,7 +64,7 @@ export default function SixDotsScaleMiddle({
           begin="j.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -74,7 +75,7 @@ export default function SixDotsScaleMiddle({
           begin="c.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -85,7 +86,7 @@ export default function SixDotsScaleMiddle({
           begin="i.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -96,7 +97,7 @@ export default function SixDotsScaleMiddle({
           begin="d.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -107,7 +108,7 @@ export default function SixDotsScaleMiddle({
           begin="h.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -118,7 +119,7 @@ export default function SixDotsScaleMiddle({
           begin="e.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -129,7 +130,7 @@ export default function SixDotsScaleMiddle({
           begin="g.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />
@@ -140,7 +141,7 @@ export default function SixDotsScaleMiddle({
           begin="f.begin+0.1s"
           attributeName="r"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="0;2;0"
           keySplines=".27,.42,.37,.99;.53,0,.61,.73"
         />

@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function ThreeDotsMoving({
   width = 24,
   height = 24,
+  dur = "0.5s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -18,7 +19,7 @@ export default function ThreeDotsMoving({
           begin="0;h.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="0;3"
           fill="freeze"
@@ -27,7 +28,7 @@ export default function ThreeDotsMoving({
           begin="b.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="4;12"
           fill="freeze"
@@ -36,7 +37,7 @@ export default function ThreeDotsMoving({
           begin="d.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="12;20"
           fill="freeze"
@@ -46,7 +47,7 @@ export default function ThreeDotsMoving({
           begin="f.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="3;0"
           fill="freeze"
@@ -58,7 +59,7 @@ export default function ThreeDotsMoving({
           begin="0;h.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="4;12"
           fill="freeze"
@@ -67,7 +68,7 @@ export default function ThreeDotsMoving({
           begin="b.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="12;20"
           fill="freeze"
@@ -77,7 +78,7 @@ export default function ThreeDotsMoving({
           begin="d.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="3;0"
           fill="freeze"
@@ -87,7 +88,7 @@ export default function ThreeDotsMoving({
           begin="f.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="0;3"
           fill="freeze"
@@ -98,7 +99,7 @@ export default function ThreeDotsMoving({
           begin="0;h.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="12;20"
           fill="freeze"
@@ -108,7 +109,7 @@ export default function ThreeDotsMoving({
           begin="b.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="3;0"
           fill="freeze"
@@ -118,7 +119,7 @@ export default function ThreeDotsMoving({
           begin="d.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="0;3"
           fill="freeze"
@@ -127,7 +128,7 @@ export default function ThreeDotsMoving({
           begin="f.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="4;12"
           fill="freeze"
@@ -139,7 +140,7 @@ export default function ThreeDotsMoving({
           begin="0;h.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="3;0"
           fill="freeze"
@@ -149,7 +150,7 @@ export default function ThreeDotsMoving({
           begin="b.end"
           attributeName="r"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="0;3"
           fill="freeze"
@@ -159,7 +160,7 @@ export default function ThreeDotsMoving({
           begin="d.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="4;12"
           fill="freeze"
@@ -168,7 +169,7 @@ export default function ThreeDotsMoving({
           begin="f.end"
           attributeName="cx"
           calcMode="spline"
-          dur="0.5s"
+          dur={dur}
           keySplines=".36,.6,.31,1"
           values="12;20"
           fill="freeze"

@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function SixDotsRotate({
   width = 24,
   height = 24,
+  dur = "0.75",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -25,7 +26,7 @@ export default function SixDotsRotate({
           attributeName="transform"
           type="rotate"
           calcMode="discrete"
-          dur="0.75s"
+          dur={dur}
           values="0 12 12;30 12 12;60 12 12;90 12 12;120 12 12;150 12 12;180 12 12;210 12 12;240 12 12;270 12 12;300 12 12;330 12 12;360 12 12"
           repeatCount="indefinite"
         />

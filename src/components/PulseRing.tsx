@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function PulseRing({
   width = 24,
   height = 24,
+  dur = "1.2s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -21,7 +22,7 @@ export default function PulseRing({
           attributeName="transform"
           calcMode="spline"
           type="translate"
-          dur="1.2s"
+          dur={dur}
           values="12 12;0 0"
           keySplines=".52,.6,.25,.99"
           repeatCount="indefinite"
@@ -31,7 +32,7 @@ export default function PulseRing({
           calcMode="spline"
           additive="sum"
           type="scale"
-          dur="1.2s"
+          dur={dur}
           values="0;1"
           keySplines=".52,.6,.25,.99"
           repeatCount="indefinite"
@@ -39,7 +40,7 @@ export default function PulseRing({
         <animate
           attributeName="opacity"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="1;0"
           keySplines=".52,.6,.25,.99"
           repeatCount="indefinite"

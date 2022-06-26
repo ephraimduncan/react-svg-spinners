@@ -24,11 +24,12 @@ export default function App() {
 
 ### Options
 
-| Property | Options  | Description                         |
-| -------- | -------- | ----------------------------------- |
-| width    | _number_ | Specifies the width of the spinner  |
-| height   | _number_ | Specifies the height of the spinner |
-| color    | _string_ | Color of the spinner                |
+| Property | Options          | Description                         |
+| -------- | ---------------- | ----------------------------------- |
+| width    | _string, number_ | Specifies the width of the spinner  |
+| height   | _string, number_ | Specifies the height of the spinner |
+| color    | _string_         | Color of the spinner                |
+| dur      | _string, number_ | Duration of spinner animation       |
 
 ## Preview
 

@@ -4,6 +4,7 @@ export default function BarsFade({
   width = 24,
   height = 24,
   color,
+  dur = "0.75s",
 }: SVGProps<SVGElement>): JSX.Element {
   return (
     <svg
@@ -18,7 +19,7 @@ export default function BarsFade({
           id="a"
           begin="0;b.end-0.25s"
           attributeName="opacity"
-          dur="0.75s"
+          dur={dur}
           values="1;.2"
           fill="freeze"
         />
@@ -27,7 +28,7 @@ export default function BarsFade({
         <animate
           begin="a.begin+0.15s"
           attributeName="opacity"
-          dur="0.75s"
+          dur={dur}
           values="1;.2"
           fill="freeze"
         />
@@ -37,7 +38,7 @@ export default function BarsFade({
           id="b"
           begin="a.begin+0.3s"
           attributeName="opacity"
-          dur="0.75s"
+          dur={dur}
           values="1;.2"
           fill="freeze"
         />

@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function PulseMultiple({
   width = 24,
   height = 24,
+  dur = "1.2s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -19,7 +20,7 @@ export default function PulseMultiple({
           begin="0;c.end"
           attributeName="r"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="0;11"
           keySplines=".52,.6,.25,.99"
           fill="freeze"
@@ -28,7 +29,7 @@ export default function PulseMultiple({
           begin="0;c.end"
           attributeName="opacity"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="1;0"
           keySplines=".52,.6,.25,.99"
           fill="freeze"
@@ -40,7 +41,7 @@ export default function PulseMultiple({
           begin="a.begin+0.2s"
           attributeName="r"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="0;11"
           keySplines=".52,.6,.25,.99"
           fill="freeze"
@@ -49,7 +50,7 @@ export default function PulseMultiple({
           begin="a.begin+0.2s"
           attributeName="opacity"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="1;0"
           keySplines=".52,.6,.25,.99"
           fill="freeze"
@@ -61,7 +62,7 @@ export default function PulseMultiple({
           begin="a.begin+0.4s"
           attributeName="r"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="0;11"
           keySplines=".52,.6,.25,.99"
           fill="freeze"
@@ -70,7 +71,7 @@ export default function PulseMultiple({
           begin="a.begin+0.4s"
           attributeName="opacity"
           calcMode="spline"
-          dur="1.2s"
+          dur={dur}
           values="1;0"
           keySplines=".52,.6,.25,.99"
           fill="freeze"

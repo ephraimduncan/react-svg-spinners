@@ -7,4 +7,5 @@ export default defineConfig({
   clean: false,
   dts: true,
   target: "es2020",
+  watch: true,
 });

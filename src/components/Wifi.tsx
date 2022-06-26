@@ -1,8 +1,12 @@
 import React, { SVGProps } from "react";
+import { stringDurationToFloat } from "../util";
+
+const FACTOR = 0.25 / 0.001;
 
 export default function Wifi({
   width = 24,
   height = 24,
+  dur = "0.25s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -22,7 +26,7 @@ export default function Wifi({
           begin="0;d.end+0.2s"
           attributeName="opacity"
           calcMode="discrete"
-          dur="0.25s"
+          dur={dur}
           values="0;1"
           fill="freeze"
         />
@@ -30,7 +34,7 @@ export default function Wifi({
           id="d"
           begin="c.end+0.5s"
           attributeName="opacity"
-          dur="0.001s"
+          dur={stringDurationToFloat(dur) / FACTOR}
           values="1;0"
           fill="freeze"
         />
@@ -44,14 +48,14 @@ export default function Wifi({
           begin="a.end"
           attributeName="opacity"
           calcMode="discrete"
-          dur="0.25s"
+          dur={dur}
           values="0;1"
           fill="freeze"
         />
         <animate
           begin="c.end+0.5s"
           attributeName="opacity"
-          dur="0.001s"
+          dur={stringDurationToFloat(dur) / FACTOR}
           values="1;0"
           fill="freeze"
         />
@@ -65,14 +69,14 @@ export default function Wifi({
           begin="b.end"
           attributeName="opacity"
           calcMode="discrete"
-          dur="0.25s"
+          dur={dur}
           values="0;1"
           fill="freeze"
         />
         <animate
           begin="c.end+0.5s"
           attributeName="opacity"
-          dur="0.001s"
+          dur={stringDurationToFloat(dur) / FACTOR}
           values="1;0"
           fill="freeze"
         />

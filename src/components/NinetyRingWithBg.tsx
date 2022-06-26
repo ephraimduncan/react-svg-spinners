@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function NinetyRingWithBg({
   width = 24,
   height = 24,
+  dur = "0.75s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -21,7 +22,7 @@ export default function NinetyRingWithBg({
         <animateTransform
           attributeName="transform"
           type="rotate"
-          dur="0.75s"
+          dur={dur}
           values="0 12 12;360 12 12"
           repeatCount="indefinite"
         />

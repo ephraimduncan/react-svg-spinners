@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function BarsScaleFade({
   width = 24,
   height = 24,
+  dur = "0.75s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -18,21 +19,21 @@ export default function BarsScaleFade({
           id="a"
           begin="0;b.end-0.25s"
           attributeName="y"
-          dur="0.75s"
+          dur={dur}
           values="1;5"
           fill="freeze"
         />
         <animate
           begin="0;b.end-0.25s"
           attributeName="height"
-          dur="0.75s"
+          dur={dur}
           values="22;14"
           fill="freeze"
         />
         <animate
           begin="0;b.end-0.25s"
           attributeName="opacity"
-          dur="0.75s"
+          dur={dur}
           values="1;.2"
           fill="freeze"
         />
@@ -42,14 +43,14 @@ export default function BarsScaleFade({
         <animate
           begin="a.begin+0.15s"
           attributeName="height"
-          dur="0.75s"
+          dur={dur}
           values="22;14"
           fill="freeze"
         />
         <animate
           begin="a.begin+0.15s"
           attributeName="opacity"
-          dur="0.75s"
+          dur={dur}
           values="1;.2"
           fill="freeze"
         />
@@ -59,21 +60,21 @@ export default function BarsScaleFade({
           id="b"
           begin="a.begin+0.3s"
           attributeName="y"
-          dur="0.75s"
+          dur={dur}
           values="1;5"
           fill="freeze"
         />
         <animate
           begin="a.begin+0.3s"
           attributeName="height"
-          dur="0.75s"
+          dur={dur}
           values="22;14"
           fill="freeze"
         />
         <animate
           begin="a.begin+0.3s"
           attributeName="opacity"
-          dur="0.75s"
+          dur={dur}
           values="1;.2"
           fill="freeze"
         />

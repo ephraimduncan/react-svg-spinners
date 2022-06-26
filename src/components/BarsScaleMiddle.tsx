@@ -3,6 +3,7 @@ import React, { SVGProps } from "react";
 export default function BarsScaleMiddle({
   width = 24,
   height = 24,
+  dur = "0.6s",
   color,
 }: SVGProps<SVGElement>): JSX.Element {
   return (
@@ -18,7 +19,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.4s"
           attributeName="y"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="6;1;6"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -26,7 +27,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.4s"
           attributeName="height"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;22;12"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -36,7 +37,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.2s"
           attributeName="y"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="6;1;6"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -44,7 +45,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.2s"
           attributeName="height"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;22;12"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -55,7 +56,7 @@ export default function BarsScaleMiddle({
           begin="0;b.end-0.1s"
           attributeName="y"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="6;1;6"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -63,7 +64,7 @@ export default function BarsScaleMiddle({
           begin="0;b.end-0.1s"
           attributeName="height"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;22;12"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -73,7 +74,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.2s"
           attributeName="y"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="6;1;6"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -81,7 +82,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.2s"
           attributeName="height"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;22;12"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -92,7 +93,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.4s"
           attributeName="y"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="6;1;6"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
@@ -100,7 +101,7 @@ export default function BarsScaleMiddle({
           begin="a.begin+0.4s"
           attributeName="height"
           calcMode="spline"
-          dur="0.6s"
+          dur={dur}
           values="12;22;12"
           keySplines=".14,.73,.34,1;.65,.26,.82,.45"
         />
