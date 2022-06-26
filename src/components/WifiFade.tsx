@@ -48,7 +48,13 @@ export default function WifiFade({
           values="0;1"
           fill="freeze"
         />
-        <animate begin="c.end+0.5s" attributeName="opacity" dur="0.1s" values="1;0" fill="freeze" />
+        <animate
+          begin="c.end+0.5s"
+          attributeName="opacity"
+          dur={stringDurationToFloat(dur) / 2.5}
+          values="1;0"
+          fill="freeze"
+        />
       </path>
       <path
         d="M12,3C7.95,3 4.21,4.34 1.2,6.6L3,9C5.5,7.12 8.62,6 12,6C15.38,6 18.5,7.12 21,9L22.8,6.6C19.79,4.34 16.05,3 12,3"
@@ -62,7 +68,13 @@ export default function WifiFade({
           values="0;1"
           fill="freeze"
         />
-        <animate begin="c.end+0.5s" attributeName="opacity" dur="0.1s" values="1;0" fill="freeze" />
+        <animate
+          begin="c.end+0.5s"
+          attributeName="opacity"
+          dur={stringDurationToFloat(dur) / 2.5}
+          values="1;0"
+          fill="freeze"
+        />
       </path>
     </svg>
   );
